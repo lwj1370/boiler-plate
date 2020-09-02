@@ -3,6 +3,7 @@ const app = express()
 const port = 3000
 
 const mongoose = require('mongoose');
+//mongoose 접속 정보 입력
 mongoose.connect('mongodb+srv://test:test@cluster0-ngxmt.mongodb.net/test?retryWrites=true&w=majority',
     {useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: true
     }).then(() => console.log("MongoDB Connected")).catch(err => console.log(err));
